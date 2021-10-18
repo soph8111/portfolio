@@ -1,0 +1,79 @@
+/* Globale elementer */
+
+:root {
+  --fontbase: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+/* MENU */
+
+nav {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+nav #logo {
+  width: 50px;
+}
+
+nav .elm {
+  padding: 5vw;
+}
+
+nav .elm a {
+  margin: 10px;
+  color: #f9f9f9;
+  text-decoration: none;
+  font-family: var(--fontbase);
+}
+
+/* SPLASH */
+
+#splash {
+  height: 100vh;
+  background-color: #dbcce6;
+}
+
+/* WORK SECTION */
+
+#work {
+  height: 100%;
+  background-color: rgb(180, 200, 230);
+  display: grid;
+  gap: 20px;
+}
+
+.project {
+  width: 30vw;
+  height: 20vw;
+  background-color: blue;
+}
+
+/* .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+ */
+
+/* Animation on path */
+
+#line-svg {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+}
