@@ -9,6 +9,22 @@
   margin: 0;
 }
 
+body {
+  background-color: rgb(180, 200, 230);
+}
+
+p,
+a,
+h1,
+h2 {
+  font-family: var(--fontbase);
+  color: var(--fontcolor);
+}
+
+a {
+  cursor: pointer;
+}
+
 /* MENU */
 
 nav {
@@ -87,7 +103,6 @@ nav .elm a {
 
 #work {
   height: 100%;
-  background-color: rgb(180, 200, 230);
   max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -149,6 +164,64 @@ nav .elm a {
   z-index: 2;
 }
 
+.the_container {
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  perspective: 2px;
+}
+
+#header {
+  height: 65vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transform-style: preserve-3d;
+}
+
+#title {
+  font-size: 36px;
+  color: red;
+  transform: translateZ(-3px) scale(2.5);
+  align-self: center;
+  background: beige;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  margin-top: -120vw;
+  place-items: center;
+}
+
+.the_project {
+  position: relative;
+  background-color: rgb(180, 200, 230);
+}
+
+.intro {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  gap: 2em;
+}
+
+.intro p,
+.intro a {
+  margin: 1.5em 0 1.5em 0;
+}
+
+.info {
+  border-top: 1px solid white;
+}
+
+.images {
+  padding: 1em;
+}
+
+.images img {
+  width: 100%;
+}
+
 @media only screen and (min-device-width: 768px) {
   /* Menu */
 
@@ -169,6 +242,34 @@ nav .elm a {
   #splash #arrow_down {
     width: 3em;
   }
+
+  /* Singleview */
+
+  /* header */
+
+  #header {
+    height: 450px;
+  }
+
+  #title {
+    margin-top: -510px;
+  }
+
+  .intro {
+    height: 60vh;
+    align-content: center;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .info {
+    border-top: 0;
+    border-left: 1px solid white;
+    padding-left: 2em;
+  }
 }
 
 @media screen and (min-device-width: 1200px) {
@@ -182,5 +283,27 @@ nav .elm a {
   #splash #arrow_down {
     width: 3em;
     margin: auto;
+  }
+
+  /* Singleview */
+
+  /* header */
+
+  #header {
+    height: 380px;
+  }
+
+  #title {
+    margin-top: -400px;
+  }
+
+  .intro {
+    height: 60vh;
+    align-content: center;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .intro {
+    grid-template-columns: 2fr 1fr;
   }
 }
