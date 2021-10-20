@@ -6,7 +6,6 @@ function start() {
   console.log("start");
 
   arrowDown();
-
   startDrawingLine();
 }
 
