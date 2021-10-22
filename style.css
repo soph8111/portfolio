@@ -58,7 +58,7 @@ nav .elm a {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #cfb5b9;
+  background-color: #d1929b;
   display: grid;
 }
 
@@ -106,7 +106,7 @@ nav .elm a {
   max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 2em;
+  row-gap: 6em;
   padding: 2em;
 
   /*   display: grid;
@@ -163,6 +163,67 @@ nav .elm a {
   pointer-events: none;
   z-index: 2;
 }
+
+/* ABOUT */
+
+#about {
+  overflow: hidden;
+}
+
+#content {
+  width: 80%;
+  margin: auto;
+}
+
+#name {
+  align-content: center;
+  font-size: 21vw;
+  text-align: center;
+  opacity: 0.5;
+  margin: 0.3em auto;
+}
+
+#name p:nth-child(2) {
+  letter-spacing: 2vw;
+}
+
+#text {
+  display: grid;
+  gap: 2em;
+  padding-top: 85px;
+}
+
+#stay_in_touch {
+  display: grid;
+  gap: 20px;
+  background-color: #ded3e6;
+  height: 20vh;
+  align-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#stay_in_touch p,
+#stay_in_touch #icons {
+  padding-left: 10%;
+}
+
+#stay_in_touch p {
+  color: white;
+  font-size: 1.4em;
+}
+
+#stay_in_touch #icons {
+  display: flex;
+  gap: 12px;
+}
+
+#stay_in_touch img {
+  width: 50px;
+}
+
+/* SIGLEVIEW */
 
 .the_container {
   height: 100vh;
@@ -243,6 +304,39 @@ nav .elm a {
     width: 3em;
   }
 
+  /* ABOUT */
+
+  #content {
+    width: 90%;
+  }
+
+  #name {
+    display: flex;
+    gap: 3vw;
+    font-size: 12vw;
+    margin-top: 8vw;
+  }
+
+  #name p:nth-child(2) {
+    letter-spacing: 0;
+  }
+
+  #text {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 5em;
+    font-size: 1.2em;
+    padding-top: 150px;
+  }
+
+  #stay_in_touch {
+    height: 20vh;
+  }
+
+  #stay_in_touch p,
+  #stay_in_touch #icons {
+    padding-left: 5%;
+  }
+
   /* Singleview */
 
   /* header */
@@ -269,6 +363,21 @@ nav .elm a {
     border-top: 0;
     border-left: 1px solid white;
     padding-left: 2em;
+  }
+
+  /* fade in */
+  .fade_in {
+    animation: fadein_kf 1.5s both;
+  }
+  @keyframes fadein_kf {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
