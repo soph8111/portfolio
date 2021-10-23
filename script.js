@@ -7,6 +7,7 @@ function start() {
 
   arrowDown();
   startDrawingLine();
+  cooltext();
 }
 
 function arrowDown() {
@@ -53,4 +54,53 @@ function startDrawingLine() {
     // Draw in reverse
     path.style.strokeDashoffset = pathLength - newLength;
   });
+}
+
+function cooltext() {
+  const text = document.querySelector(".cooltext").textContent; // Henter tekst der skal udskrives
+
+  // Opretter variabler
+  let maxNumbersOfIterations; // Variabel der skal tælles på
+  let iterator;
+  let output;
+
+  init();
+
+  function init() {
+    document.querySelector(".cooltext").innerHTML = "";
+    maxNumbersOfIterations = text.length; // Loopet skal køre det antal gange, som teksten indholder karakterer.
+    iterator = 0;
+    loop(); // Kalder på  loopet
+  }
+
+  function loop() {
+    iterator++; // Plusser én til hver gang loopet har kørt
+
+    // Så længe iterator er mindre end eller lig med antallet af bogstaver/karaktere
+    if (iterator <= maxNumbersOfIterations) {
+      setTimeout(loop, 90); // Sætter delay på loopet (0,25 sekunder
+
+      output = text.substring(iterator, iterator - 1);
+
+      // create a new span element
+      const newSpan = document.createElement("span");
+      // give class
+      newSpan.className = "letter";
+      // and give it some content
+      const newContent = document.createTextNode(output);
+
+      newSpan.appendChild(newContent);
+      document.querySelector(".cooltext").appendChild(newSpan);
+    }
+    animateText();
+  }
+
+  function animateText() {
+    document.querySelectorAll(".letter").forEach((elm, i) => {
+      if (elm.innerHTML.includes(" ")) {
+        elm.innerHTML = elm.innerHTML.replace(" ", "&nbsp");
+      }
+      elm.classList.add("fade_text");
+    });
+  }
 }
