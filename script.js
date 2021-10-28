@@ -6,8 +6,10 @@ function start() {
   console.log("start");
 
   arrowDown();
-  startDrawingLine();
-  cooltext();
+  arrowUp();
+  /*   setLineView();
+  startDrawingLine(); */
+  fadeIn();
 }
 
 function arrowDown() {
@@ -26,6 +28,39 @@ function arrowDown() {
   arrow.addEventListener("click", () => {
     gsap.to(window, { duration: 1, scrollTo: "#work" });
   });
+}
+
+function arrowUp() {
+  const arrow = document.querySelector("#to_top");
+
+  gsap.from(arrow, { scale: 0.7, opacity: 0, scrollTrigger: { trigger: arrow, scrub: true, start: "-50px 90%", end: "50% 80%" } });
+
+  arrow.addEventListener("click", () => {
+    gsap.to(window, { duration: 1, scrollTo: 0 });
+  });
+}
+
+function setLineView() {
+  console.log("test");
+
+  const line = document.querySelector("#line-svg");
+  line.setAttribute("viewBox", `0 0 1200 2250`);
+  line.setAttribute("d", "m 1 67 c 236 12 405 186 289 251 c -302 162 -223 176 -63 253 c 205 107 36 121 -67 177 c -309 163 3 170 75 188 c 104 16 150 30 79 228");
+
+  /* const line = document.querySelector("#line-svg");
+  const section = document.querySelector("#work");
+  const rect = section.getBoundingClientRect();
+
+  const width = section.offsetWidth;
+  const height = rect.height;
+
+  console.log(width);
+
+  console.log(height);
+
+  line.setAttribute("viewBox", `0 0 ${width} 1850`);
+  line.setAttribute("width", `${width}px`);
+  line.setAttribute("height", `1850px`); */
 }
 
 function startDrawingLine() {
@@ -50,9 +85,35 @@ function startDrawingLine() {
     const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     // Length to offset the dashes
     const drawLength = pathLength * scrollPercentage;
-    const newLength = drawLength - window.innerHeight / 2;
+    // const newLength = drawLength - window.innerHeight / 2;
     // Draw in reverse
-    path.style.strokeDashoffset = pathLength - newLength;
+    path.style.strokeDashoffset = pathLength - drawLength;
+  });
+}
+
+function fadeIn() {
+  gsap.from("#work1", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work1", scrub: true, start: "top bottom", end: "20% 65%" } });
+  gsap.from("#work2", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work2", scrub: true, start: "top bottom", end: "20% 65%" } });
+  gsap.from("#work3", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work3", scrub: true, start: "top bottom", end: "20% 65%" } });
+  gsap.from("#work4", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work4", scrub: true, start: "top bottom", end: "20% 65%" } });
+  gsap.from("#work5", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work5", scrub: true, start: "top bottom", end: "20% 65%" } });
+}
+
+/* function fadeIn() {
+  // Inspired by: https://www.youtube.com/watch?v=19jD-DcOBtQ
+
+  const projects = document.querySelectorAll(".cooltext");
+
+  projects.forEach((project) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          project.classList.add("fade_text");
+        }
+      });
+    });
+
+    observer.observe(project);
   });
 }
 
@@ -103,4 +164,4 @@ function cooltext() {
       elm.classList.add("fade_text");
     });
   }
-}
+} */

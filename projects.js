@@ -6,20 +6,11 @@ function start() {
   console.log("start");
 
   fadeIn();
+  //arrowUp();
 }
 
 function fadeIn() {
   // Inspired by: https://www.youtube.com/watch?v=19jD-DcOBtQ
-
-  const firstObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        document.querySelector(".image1").classList.add("fade_in");
-      }
-    });
-  });
-
-  firstObserver.observe(document.querySelector(".images"));
 
   const images = document.querySelectorAll(".image");
 
@@ -35,3 +26,11 @@ function fadeIn() {
     observer.observe(img);
   });
 }
+
+/* function arrowUp() {
+  const arrow = document.querySelector("#to_top");
+
+  arrow.addEventListener("click", () => {
+    gsap.to(window, { duration: 1, scrollTo: 0 });
+  });
+} */

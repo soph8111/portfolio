@@ -17,7 +17,7 @@
 <body>
 
     <nav>
-        <a class="elm" href="index.html"><img id="logo" src="./images/logo.png" alt="logo"></a>
+        <a class="elm" href="index.html"><img id="logo" src="./icons/logo.png" alt="logo"></a>
         <span class="elm">
             <a href="#work">Work</a>
             <a href="about.html">About</a>
@@ -30,51 +30,65 @@
     ?> -->
 
     <section id="splash">
-        <h1>Hello, I'm Sophie</h1>
-        <img id="portrait" src="./images/wave.png" alt="wave">
-        <p>I’m a Multimedia Design student at 
-            <br>KEA, Copenhagen. I have a 
-            <br>passion for graphic design, UI and 
-            <br>UX. As a sidebonus I love to 
-            <br>program websites…</p>
-        <p>…In fact, I did this site from scratch</p>
-        <img id="arrow_down" src="./images/arrow.png" alt="arrow down">
+        <div>
+            <h1>Hello, I'm Sophie</h1>
+            <img id="portrait" src="./icons/wave.svg" alt="wave">
+            <p>An openminded 24 years old aspiring multimedia designer. When it comes to my work, I’m a perfectionist who love to challenge myself. I love to nerd around with HTML, CSS and JavaScript but I’m also born with an aesthetic eye and enjoy making beautiful and playful things. </p>
+        </div>
+        <img id="arrow_down" src="./icons/down.svg" alt="arrow down">
     </section>
+
 
     <section id="work">
-        <a id="work1" class="project" href="hogwarts.html">
-            <img src="./images/hogwarts/desktop.jpg" alt="hogwarts">
-            <p class="cooltext" >Hogwarts</p>
+        <h2>My projects</h2>
+        <a id="work1" class="left project" href="portfolio_01.html">
+            <img src="./images/portfolio_0.1/link.jpg" alt="portfolio">
+            <p class="cooltext">Portfolio 0.1</p>
         </a>
-        <div id="work2" class="project">
-            <a href="liiro.html">Redesign</a>
-        </div>
-        <div id="work3" class="project">
-            <a href="exam.html">1. semester exam</a>
-        </div>
-        <div id="work4" class="project"></div>
+        <a id="work2" class="right project" href="hogwarts.html">
+            <img src="./images/hogwarts/link.jpg" alt="hogwarts">
+            <p class="cooltext">Hogwarts Student List</p>
+        </a>
+        <a id="work3" class="left project" href="bike.html">
+            <img src="./images/bike-configurator/link.jpg" alt="bike">
+            <p class="cooltext">Bike Configurator</p>
+        </a>
+        <a id="work4" class="right project" href="art.html">
+            <img src="./images/art/blue_universe/tower.jpg" alt="tower">
+            <p class="cooltext">Illustrator projects</p>
+        </a>
+        <a id="work5" class="left project" href="liiro.html">
+            <img src="./images/liiro/shop.jpg" alt="shop">
+            <p class="cooltext">Visual Identity X LIIRO DESIGN</p>
+        </a>
     </section>
 
 
-    <div id="guide">
+    <div id="to_top">
+        <img src="./icons/up.svg" alt="to top">
+       <p>Take one more ride</p>
+   </div>
 
-          <svg id="line-svg" xmlns="http://www.w3.org/2000/svg" width="305.917" height="2125.039" viewBox="0 0 305.917 2125.039">
-            <path id="guideline" data-name="Path 4" d="M253.121,1878.929s254.7,188.956,262.824,339.819-222.235,118.081-230.311,263.634,259.049,215.009,261.4,385.2-264.9,285.463-277.861,432.6S496.79,3424,521.074,3595.647s-150.7,297.05-189.4,394.837" transform="translate(-246.126 -1871.934)" fill="none" stroke="#1e7b12" stroke-linecap="round" stroke-width="10"/>
-          </svg>
-          
-          
-          
 
-        <!-- <svg id="line-svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
+<!--     <div id="guide">
+        <svg id="line-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 1050" width="100vw" height="100%">
             <path id="guideline" 
-                  d="M -5,0
-                     Q 450 230 300 450 
-                     T 130 750
-                     Q 100 850 300 1000
-                     T 150 1200"
-                  fill="none" stroke="green" stroke-width="5px" />
-          </svg> -->
-    </div>
+                d="M 1 67 C 237 79 406 253 290 318 C -12 480 67 494 227 571 C 432 678 263 692 160 748 C -149 911 163 918 235 936 C 339 952 385 966 314 1050"                  
+                fill="none" stroke="green" stroke-width="5px" />
+          </svg>
+    </div> -->
+
+    <footer id="stay_in_touch">
+        <p>Let's stay in touch...</p>  
+        <span id="icons">
+            <a href="mailto:sophiefeline@hotmail.com" target="_blank"><img src="icons/email.svg" alt="Mail"></a>
+            <a href="https://www.linkedin.com/in/sophie-feline-spang-kjeldsen/" target="_blank"><img src="icons/linkedin.svg" alt="linkedIn"></a>
+            <a href="https://www.pinterest.dk/sophiespang" target="_blank"><img src="icons/pinterest.svg" alt="Pinterest"></a>
+            <a href="https://github.com/soph8111" target="_blank"><img src="icons/github.svg" alt="Github"></a>
+            <a href="https://codepen.io/sophiespang" target="_blank"><img src="icons/codepen.svg" alt="Codepen"></a>
+        </span>
+    </footer>
+
 
 
     <!-- gsap -->

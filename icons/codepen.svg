@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94">
+  <g id="Group_16" data-name="Group 16" transform="translate(-7072 -429)">
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(7072 429)" fill="none" stroke="#606c87" stroke-width="4">
+      <circle cx="47" cy="47" r="47" stroke="none"/>
+      <circle cx="47" cy="47" r="45" fill="none"/>
+    </g>
+    <g id="Group_14" data-name="Group 14" transform="translate(-0.303 -0.303)">
+      <line id="Line_4" data-name="Line 4" y1="18.226" x2="27.875" transform="translate(7092.5 467.726)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_5" data-name="Line 5" x1="26.803" y1="18.226" transform="translate(7092.5 467.726)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_6" data-name="Line 6" x1="25.731" y2="18.226" transform="translate(7120.375 467.726)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_7" data-name="Line 7" x2="25.731" y2="18.226" transform="translate(7120.375 467.726)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_13" data-name="Line 13" y1="18.226" transform="translate(7119.839 449.5)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_14" data-name="Line 14" y1="17.154" transform="translate(7119.839 485.952)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_15" data-name="Line 15" y1="17.154" x2="25.731" transform="translate(7120.375 485.952)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_16" data-name="Line 16" x1="26.803" y1="17.154" transform="translate(7092.5 485.952)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_17" data-name="Line 17" x1="26.267" y1="18.226" transform="translate(7119.839 449.5)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_18" data-name="Line 18" y2="18.226" transform="translate(7146.106 467.726)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_19" data-name="Line 19" y2="18.226" transform="translate(7092.5 467.726)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_20" data-name="Line 20" x1="26.803" y2="18.226" transform="translate(7092.5 449.5)" fill="none" stroke="#606c87" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>
