@@ -41,6 +41,10 @@ a {
   cursor: pointer;
 }
 
+.the_project a:hover {
+  color: #22394d;
+}
+
 /* MENU */
 
 nav {
@@ -88,8 +92,13 @@ nav .elm a:hover {
   display: grid;
 }
 
+#splash div {
+  width: 80%;
+  justify-self: center;
+  margin-top: 20vh;
+}
+
 #splash h1 {
-  margin: 4em 0 0 1em;
   font-family: var(--fontbase);
   color: var(--fontcolor);
   font-size: 2rem;
@@ -97,18 +106,9 @@ nav .elm a:hover {
 
 #splash #portrait {
   width: 70vw;
-  position: relative;
-  left: 30%;
   animation: wave_kf 0.9s infinite ease-in-out alternate;
   transform-origin: 60% 60%;
-  padding: 4em 0 3em 0;
-}
-
-#splash #arrow_down {
-  width: 8vw;
-  margin: auto;
-  padding: 2em;
-  cursor: pointer;
+  padding: 1em 4em;
 }
 
 @keyframes wave_kf {
@@ -121,11 +121,18 @@ nav .elm a:hover {
 }
 
 #splash p {
-  margin: 0 0 0 2em;
   font-family: var(--fontbase);
   color: var(--fontcolor);
   font-size: 1rem;
-  width: 61%;
+  line-height: 1.25em;
+  width: 80%;
+}
+
+#splash #arrow_down {
+  width: 8vw;
+  margin: auto;
+  padding: 2em;
+  cursor: pointer;
 }
 
 /* WORK SECTION */
@@ -174,64 +181,9 @@ nav .elm a:hover {
   grid-column-end: 4;
 }
 
-/* .left p,
-.right p {
-  position: relative;
-  top: -21px;
-  left: -12px;
-}
-
-#work p {
-  color: rgb(255, 111, 73);
-}
-
-#work2 p {
-  color: #f5b8ce;
-}
-
-#work3 p {
-  color: #f9e688;
-}
-
-#work4 p {
-  color: #e3d9b6;
-}
-
-#work5 p {
-  color: #e3d9b6;
-} */
-
 .letter {
   display: inline-block;
 }
-
-/* .fade_text {
-  animation: fade_text_kf 0.5s 1 forwards;
-  animation-timing-function: cubic-bezier(0, 0, 0.63, 1.63);
-}
-@keyframes fade_text_kf {
-  0% {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-} */
-
-/* .path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: dash 5s linear forwards;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
- */
 
 /* Animation on path */
 
@@ -274,7 +226,6 @@ nav .elm a:hover {
 /* ABOUT */
 
 #about {
-  overflow: hidden;
   background-color: rgb(180, 200, 230);
 }
 
@@ -304,15 +255,10 @@ nav .elm a:hover {
 #stay_in_touch {
   display: grid;
   gap: 20px;
-  /* background-color: #ded3e6; */
-  background-color: rgb(180, 200, 230);
+  background-color: #eeddef;
   height: 20vh;
   align-content: center;
   width: 100%;
-}
-
-#stay_in_touch.about {
-  background-color: #eeddef;
 }
 
 #stay_in_touch p,
@@ -479,26 +425,20 @@ nav .elm a:hover {
   /* SPLASH */
 
   #splash div {
-    width: 80%;
-    justify-self: center;
-  }
-
-  #splash h1 {
-    margin: 4em 0 0 2em;
-    font-size: 2.7em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
   }
 
   #splash #portrait {
     width: 20em;
-    left: 60%;
     padding: 0;
+    justify-self: center;
   }
 
   #splash p {
     font-size: 1.1em;
-    width: 40%;
-    margin-bottom: 2em;
-    margin-top: -2em;
+    width: 120%;
   }
 
   #splash #arrow_down {
@@ -518,14 +458,14 @@ nav .elm a:hover {
   /* ABOUT */
 
   #content {
-    width: 90%;
+    width: 80%;
   }
 
   #name {
     display: flex;
     gap: 3vw;
-    font-size: 12vw;
-    margin-top: 8vw;
+    font-size: 10.5vw;
+    margin-top: 5.5vw;
   }
 
   #name p:nth-child(2) {
@@ -632,25 +572,17 @@ nav .elm a:hover {
 
   #splash #portrait {
     width: 23em;
-    left: 60%;
   }
 
   #splash h1 {
     font-size: 3.5em;
-    margin: 4em 0 0 1.5em;
+    align-self: center;
   }
 
   #splash p {
-    font-size: 1.2em;
-    justify-self: center;
-    margin-left: 4em;
-    margin-top: -4em;
-    width: 20em;
-  }
-
-  #splash p:nth-of-type(2) {
-    font-size: 1.2em;
-    margin-left: 4em;
+    font-size: 1.1em;
+    width: 85%;
+    margin-top: -120px;
   }
 
   #splash #arrow_down {

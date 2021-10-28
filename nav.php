@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <nav>
-        <a class="elm" href="index.html"><img id="logo" src="./images/logo.png" alt="logo"></a>
+<nav>
+        <a class="elm" href="index.html"><img id="logo" src="./icons/logo.png" alt="logo"></a>
         <span class="elm">
             <a href="#work">Work</a>
             <a href="about.html">About</a>
