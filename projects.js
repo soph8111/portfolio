@@ -6,7 +6,6 @@ function start() {
   console.log("start");
 
   fadeIn();
-  //arrowUp();
 }
 
 function fadeIn() {
@@ -26,11 +25,3 @@ function fadeIn() {
     observer.observe(img);
   });
 }
-
-/* function arrowUp() {
-  const arrow = document.querySelector("#to_top");
-
-  arrow.addEventListener("click", () => {
-    gsap.to(window, { duration: 1, scrollTo: 0 });
-  });
-} */
