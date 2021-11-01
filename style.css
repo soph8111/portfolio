@@ -553,10 +553,6 @@ nav .elm a:hover {
 
   /* header */
 
-  .the_container {
-    /* padding-top: 150px; */
-  }
-
   .the_container::-webkit-scrollbar {
     display: none; /* Chrome Safari */
   }
