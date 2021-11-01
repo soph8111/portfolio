@@ -14,6 +14,44 @@ body {
   /* background-color: rgb(180, 200, 230); */
   background-color: var(--background);
   padding: 0;
+  cursor: none;
+}
+
+.cursor {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--fontcolor);
+  z-index: 200;
+  pointer-events: none;
+  animation: hover_in_kf 0.5s forwards;
+}
+
+.hover {
+  animation: hover_out_kf 0.5s forwards;
+}
+
+@keyframes hover_in_kf {
+  0% {
+    transform: scale(1.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hover_out_kf {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0.6;
+  }
 }
 
 p,
@@ -38,10 +76,11 @@ h2 {
 }
 
 a {
-  cursor: pointer;
+  cursor: none;
 }
 
-.the_project a:hover {
+.the_project a:hover,
+#cv:hover {
   color: #22394d;
 }
 
@@ -67,7 +106,7 @@ nav #logo:hover {
 }
 
 nav .elm {
-  padding: 5vw;
+  margin: 5vw;
 }
 
 nav .elm a {
@@ -132,7 +171,6 @@ nav .elm a:hover {
   width: 8vw;
   margin: auto;
   padding: 2em;
-  cursor: pointer;
 }
 
 /* WORK SECTION */
@@ -148,6 +186,7 @@ nav .elm a:hover {
 
 #work h2 {
   grid-column: span 3;
+  text-align: center;
 }
 
 .project {
@@ -210,12 +249,6 @@ nav .elm a:hover {
   margin-top: 50px;
   margin-right: 20px;
   margin-bottom: 20px;
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-#to_top:hover {
-  opacity: 1;
 }
 
 #to_top img {
@@ -339,6 +372,11 @@ nav .elm a:hover {
 #title.art {
   background-color: rgb(236 227 202);
   color: #7692cc;
+}
+
+#title.one-minute {
+  background-color: #cacdc9;
+  color: #5d7a99;
 }
 
 .the_project {
