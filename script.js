@@ -97,6 +97,8 @@ function fadeIn() {
   gsap.from("#work3", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work3", scrub: true, start: "top bottom", end: "20% 65%" } });
   gsap.from("#work4", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work4", scrub: true, start: "top bottom", end: "20% 65%" } });
   gsap.from("#work5", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work5", scrub: true, start: "top bottom", end: "20% 65%" } });
+  gsap.from("#work6", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work6", scrub: true, start: "top bottom", end: "20% 65%" } });
+  gsap.from("#work7", { y: "200px", opacity: 0, scrollTrigger: { trigger: "#work7", scrub: true, start: "top bottom", end: "20% 65%" } });
 }
 
 /* function fadeIn() {

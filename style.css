@@ -21,6 +21,8 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
+  top: -20px;
+  left: -20px;
   border-radius: 50%;
   background-color: var(--fontcolor);
   z-index: 200;
@@ -379,6 +381,11 @@ nav .elm a:hover {
   color: #5d7a99;
 }
 
+#title.game {
+  background-color: #b2d7e9;
+  color: #b34f92;
+}
+
 .the_project {
   position: relative;
   background-color: var(--background);
@@ -410,6 +417,17 @@ nav .elm a:hover {
 .images video {
   width: 100%;
   margin-bottom: 2em;
+}
+
+.other_projects {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin: 2em;
+}
+
+.other_projects a {
+  text-decoration: none;
 }
 
 /* Liiro */
