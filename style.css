@@ -349,6 +349,7 @@ nav .elm a:hover {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
+  font-size: 2em;
 }
 
 #title.hogwarts {
@@ -382,8 +383,8 @@ nav .elm a:hover {
 }
 
 #title.game {
-  background-color: #b2d7e9;
-  color: #b34f92;
+  background-color: #f2e9f2;
+  color: #8b8578;
 }
 
 .the_project {
@@ -456,16 +457,6 @@ nav .elm a:hover {
 
 #art .colomns {
   margin-bottom: 1em;
-}
-
-#art .colomns:nth-child(2) {
-  padding: 1.5em;
-  background-color: #ddddd7;
-}
-
-#art .colomns:nth-child(3) {
-  padding: 1.5em;
-  background-color: #ede3ca;
 }
 
 @media only screen and (min-device-width: 768px) {
@@ -563,6 +554,7 @@ nav .elm a:hover {
 
   #title {
     margin-top: -350px;
+    font-size: 3em;
   }
 
   .intro {
